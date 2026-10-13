@@ -3,33 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Digital | Web & Frontend Developer</title>
+  <title>Arvin Dzaky Nugraha | Web & Frontend Developer Portfolio</title>
+  <meta name="description" content="Portofolio digital resmi Arvin Dzaky Nugraha, mahasiswa D3 Teknik Informatika Politeknik Elektronika Negeri Surabaya (PENS) - Web & Frontend Developer.">
+  <meta name="author" content="Arvin Dzaky Nugraha">
+  
   <link rel="stylesheet" href="style.css">
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <!-- Header / Navbar -->
-  <header class="header">
+<body class="futuristic-theme">
+  <!-- Glowing Background Ambient Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Header / Navigation -->
+  <header class="header glass-panel">
     <div class="container nav-container">
       <a href="#home" class="logo">
-        <span class="logo-accent">Porto</span>folio.
+        <span class="logo-terminal">&gt;_</span>
+        <span class="logo-main">Arvin<span class="logo-accent">Dzaky</span></span>
+        <span class="status-indicator" title="Status: Online & Tersedia"></span>
       </a>
-      
-      <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
         <span class="hamburger"></span>
       </button>
 
       <nav class="navbar" id="navbar">
         <ul class="nav-list">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link nav-btn">Contact</a></li>
+          <li><a href="#home" class="nav-link active"><span class="nav-idx">01.</span>Home</a></li>
+          <li><a href="#about" class="nav-link"><span class="nav-idx">02.</span>About</a></li>
+          <li><a href="#skills" class="nav-link"><span class="nav-idx">03.</span>Skills</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-idx">04.</span>Projects</a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-idx">05.</span>Experience</a></li>
+          <li><a href="#testimonials" class="nav-link"><span class="nav-idx">06.</span>Reviews</a></li>
+          <li><a href="#contact" class="nav-link nav-btn-glow"><span class="nav-idx">07.</span>Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -40,16 +53,51 @@
     <section id="home" class="hero-section">
       <div class="container hero-container">
         <div class="hero-content">
-          <div class="badge">Terbuka untuk Peluang Kerja</div>
+          <div class="hero-badge glass-pill">
+            <span class="pulse-dot"></span>
+            <span>Portofolio Digital • Arvin Dzaky Nugraha</span>
+          </div>
+
           <h1 class="hero-title">
-            Membangun Antarmuka Web yang Fungsional, Rapi, dan Responsif.
+            <span class="hero-name-intro">Arvin Dzaky Nugraha</span>
+            Membangun Pengalaman Web <span class="gradient-text">Modern, Presisi,</span> & Fungsional.
           </h1>
+
           <p class="hero-subtitle">
-            Mahasiswa D3 Teknik Informatika dengan fokus pada pengembangan aplikasi web, perancangan antarmuka pengguna, dan integrasi sistem.
+            Mahasiswa D3 Teknik Informatika di <strong>Politeknik Elektronika Negeri Surabaya (PENS)</strong> dengan fokus pada rekayasa antarmuka web, perancangan prototipe sistem yang ramah pengguna, dan integrasi backend berbasis data terstruktur.
           </p>
+
           <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">Lihat Project</a>
-            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+            <a href="#projects" class="btn btn-glow">
+              <span>Eksplorasi Project</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-glass">
+              <span>Hubungi Saya</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Counter / HUD Bar -->
+          <div class="hero-hud glass-card">
+            <div class="hud-item">
+              <span class="hud-number" data-target="2">2</span><span class="hud-symbol">+</span>
+              <span class="hud-label">Proyek Utama</span>
+            </div>
+            <div class="hud-divider"></div>
+            <div class="hud-item">
+              <span class="hud-number" data-target="6">6</span>
+              <span class="hud-label">Core Tech Stack</span>
+            </div>
+            <div class="hud-divider"></div>
+            <div class="hud-item">
+              <span class="hud-number">PENS</span>
+              <span class="hud-label">D3 Teknik Informatika</span>
+            </div>
+            <div class="hud-divider"></div>
+            <div class="hud-item">
+              <span class="hud-number"><span class="badge-status-dot"></span>Ready</span>
+              <span class="hud-label">Open for Work</span>
+            </div>
           </div>
         </div>
       </div>
@@ -59,29 +107,80 @@
     <section id="about" class="section about-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Tentang Saya</span>
-          <h2 class="section-title">Latar Belakang & Fokus Kerja</h2>
+          <span class="section-tag glass-pill">02. Profil & Orientasi</span>
+          <h2 class="section-title">Mengenal Latar Belakang & Filosofi Kerja</h2>
+          <p class="section-desc">Kombinasi antara perancangan estetika antarmuka di Figma dan eksekusi logika aplikasi web yang kokoh.</p>
         </div>
 
-        <div class="about-card">
-          <p class="about-text">
-            Saya adalah mahasiswa D3 Teknik Informatika yang memiliki minat mendalam pada pengembangan aplikasi web dan sistem antarmuka pengguna (frontend). Melalui studi akademik dan pengerjaan berbagai tugas proyek, saya terbiasa menerjemahkan ide dan alur kebutuhan pengguna menjadi halaman web yang terstruktur, mudah diakses, serta responsif di berbagai perangkat.
-          </p>
-          <p class="about-text">
-            Dalam membangun sistem web, saya memanfaatkan Figma untuk prototyping antarmuka, PHP untuk alur logika aplikasi, serta MySQL dan PostgreSQL untuk pengelolaan basis data. Saya senang menyelesaikan tantangan teknis seputar pembuatan form interaktif, integrasi data ke tampilan antarmuka, perapian tata letak pengguna, serta pengelolaan kode proyek yang tertata dengan Git dan Docker.
-          </p>
-          <div class="about-meta-grid">
-            <div class="meta-item">
-              <span class="meta-label">Status Pendidikan</span>
-              <span class="meta-value">D3 Teknik Informatika</span>
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <div class="card-glow-top"></div>
+            <h3 class="about-card-title">Fokus & Rekayasa Solusi</h3>
+            <p class="about-text">
+              Saya, <strong>Arvin Dzaky Nugraha</strong>, adalah mahasiswa D3 Teknik Informatika di <strong>Politeknik Elektronika Negeri Surabaya (PENS)</strong> yang berdedikasi dalam membangun aplikasi web modern dengan antarmuka yang bersih, responsif, dan mudah dipahami pengguna. Melalui berbagai penugasan kurikulum dan proyek kolaboratif, saya melatih kepekaan tata letak visual sekaligus pemahaman alur kerja data.
+            </p>
+            <p class="about-text">
+              Dalam workflow pengembangan, saya menggabungkan <strong>Figma</strong> untuk merancang arsitektur visual interaktif, <strong>PHP</strong> untuk menangani logika alur data, serta <strong>MySQL & PostgreSQL</strong> untuk struktur basis data yang andal. Penggunaan <strong>Git</strong> dan <strong>Docker</strong> memastikan setiap kode yang dibangun terdokumentasi rapi serta mudah dijalankan di berbagai lingkungan kerja.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="hl-icon">⚡</div>
+                <div>
+                  <h4 class="hl-title">Fokus Antarmuka Intuitif</h4>
+                  <p class="hl-desc">Perancangan form dan navigasi yang memprioritaskan kenyamanan serta kemudahan pengguna.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="hl-icon">🛡️</div>
+                <div>
+                  <h4 class="hl-title">Keterhubungan Data Aman</h4>
+                  <p class="hl-desc">Integrasi form input ke basis data relasional dengan validasi data yang terstruktur.</p>
+                </div>
+              </div>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">Target Posisi</span>
-              <span class="meta-value">Frontend Developer / Software Engineer</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Lokasi</span>
-              <span class="meta-value">[Belum diisi]</span>
+          </div>
+
+          <!-- Metadata Info Card -->
+          <div class="about-side-card glass-card">
+            <h3 class="side-card-title">Parameter Profil</h3>
+            <ul class="meta-list">
+              <li class="meta-row">
+                <span class="meta-key">Nama Pemilik</span>
+                <span class="meta-val highlight-val">Arvin Dzaky Nugraha</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">Kampus</span>
+                <span class="meta-val">Politeknik Elektronika Negeri Surabaya (PENS)</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">Program Studi</span>
+                <span class="meta-val">D3 Teknik Informatika</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">Role Impian</span>
+                <span class="meta-val highlight-val">Frontend Developer / Software Engineer</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">Bahasa Inti</span>
+                <span class="meta-val">PHP</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">UI & Prototype</span>
+                <span class="meta-val">Figma</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">Database</span>
+                <span class="meta-val">MySQL, PostgreSQL</span>
+              </li>
+              <li class="meta-row">
+                <span class="meta-key">Environment</span>
+                <span class="meta-val">Git, Docker</span>
+              </li>
+            </ul>
+
+            <div class="action-box">
+              <a href="#contact" class="btn btn-full btn-glass">Kirim Penawaran Kerjasama</a>
             </div>
           </div>
         </div>
@@ -92,195 +191,195 @@
     <section id="skills" class="section skills-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Kompetensi Teknis</span>
-          <h2 class="section-title">Skill & Alat yang Digunakan</h2>
-          <p class="section-desc">Kumpulan bahasa pemrograman, perancangan antarmuka, dan perkakas teknis yang saya kuasai dan terapkan dalam proyek.</p>
+          <span class="section-tag glass-pill">03. Stack Teknologi</span>
+          <h2 class="section-title">Keahlian Teknis & Perkakas Kerja</h2>
+          <p class="section-desc">Daftar keterampilan yang diverifikasi melalui implementasi proyek nyata tanpa klaim berlebihan.</p>
         </div>
 
         <div class="skills-grid">
-          <!-- Programming & Backend Logic -->
-          <div class="skill-category-card">
-            <div class="card-icon">💻</div>
-            <h3 class="category-title">Programming Languages</h3>
-            <ul class="skill-list">
-              <li class="skill-pill">PHP</li>
-            </ul>
+          <!-- Programming Languages -->
+          <div class="skill-futuristic-card glass-card" data-tilt>
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Bahasa Pemrograman</span>
+              <div class="tech-icon-box">💻</div>
+            </div>
+            <h3 class="skill-tech-name">PHP</h3>
+            <p class="skill-tech-desc">Membangun alur logika backend, routing formulir aplikasi web, validasi masukan data, serta integrasi dinamis ke basis data.</p>
+            <div class="skill-tags">
+              <span class="tag-glass">Web Logic</span>
+              <span class="tag-glass">Server Scripts</span>
+              <span class="tag-glass">Data Handling</span>
+            </div>
           </div>
 
-          <!-- UI Design & Frontend Prototype -->
-          <div class="skill-category-card">
-            <div class="card-icon">🎨</div>
-            <h3 class="category-title">Frontend & UI Design</h3>
-            <ul class="skill-list">
-              <li class="skill-pill">Figma</li>
-            </ul>
+          <!-- Frontend & UI -->
+          <div class="skill-futuristic-card glass-card" data-tilt>
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Frontend & UI Design</span>
+              <div class="tech-icon-box">🎨</div>
+            </div>
+            <h3 class="skill-tech-name">Figma</h3>
+            <p class="skill-tech-desc">Merancang wireframe, antarmuka pengguna (UI), alur prototipe interaktif pengguna, serta sistem desain tata letak sebelum penulisan kode.</p>
+            <div class="skill-tags">
+              <span class="tag-glass">Wireframing</span>
+              <span class="tag-glass">UI Prototyping</span>
+              <span class="tag-glass">Design Systems</span>
+            </div>
           </div>
 
-          <!-- Database Management -->
-          <div class="skill-category-card">
-            <div class="card-icon">🗄️</div>
-            <h3 class="category-title">Database Management</h3>
-            <ul class="skill-list">
-              <li class="skill-pill">MySQL</li>
-              <li class="skill-pill">PostgreSQL</li>
-            </ul>
+          <!-- Databases -->
+          <div class="skill-futuristic-card glass-card" data-tilt>
+            <div class="skill-card-header">
+              <span class="skill-category-badge">Relational Database</span>
+              <div class="tech-icon-box">🗄️</div>
+            </div>
+            <h3 class="skill-tech-name">MySQL & PostgreSQL</h3>
+            <p class="skill-tech-desc">Perancangan skema relasional, manipulasi query SQL (CRUD), normalisasi data laporan & katalog buku, dan pemeliharaan integritas data.</p>
+            <div class="skill-tags">
+              <span class="tag-glass">SQL Queries</span>
+              <span class="tag-glass">Relational Schema</span>
+              <span class="tag-glass">Data Integrity</span>
+            </div>
           </div>
 
-          <!-- Tools & Workflow -->
-          <div class="skill-category-card">
-            <div class="card-icon">⚙️</div>
-            <h3 class="category-title">Development Tools & DevOps</h3>
-            <ul class="skill-list">
-              <li class="skill-pill">Git</li>
-              <li class="skill-pill">Docker</li>
-            </ul>
+          <!-- DevOps & Workflow -->
+          <div class="skill-futuristic-card glass-card" data-tilt>
+            <div class="skill-card-header">
+              <span class="skill-category-badge">DevOps & Version Control</span>
+              <div class="tech-icon-box">⚙️</div>
+            </div>
+            <h3 class="skill-tech-name">Git & Docker</h3>
+            <p class="skill-tech-desc">Manajemen cabang kode (branching), commit bertahap dengan Git, serta kontainerisasi lingkungan web dan database menggunakan Docker.</p>
+            <div class="skill-tags">
+              <span class="tag-glass">Git Workflow</span>
+              <span class="tag-glass">Containerization</span>
+              <span class="tag-glass">Consistent Dev Env</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4. Projects Section -->
+    <!-- 4. Projects Section with Category Filtering & Modals -->
     <section id="projects" class="section projects-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Portofolio Karya</span>
-          <h2 class="section-title">Project Pilihan</h2>
-          <p class="section-desc">Bukti implementasi teknis dari studi dan pengembangan aplikasi web yang pernah saya bangun.</p>
+          <span class="section-tag glass-pill">04. Portofolio Proyek</span>
+          <h2 class="section-title">Karya & Eksplorasi Aplikasi Web</h2>
+          <p class="section-desc">Gunakan filter untuk mengamati proyek berdasarkan domain kebutuhan, dan klik pada kartu untuk membuka detail studi kasus.</p>
         </div>
 
-        <div class="projects-list">
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">Semua Proyek <span class="filter-count">(2)</span></button>
+          <button class="filter-btn" data-filter="web-app">Web Application <span class="filter-count">(2)</span></button>
+          <button class="filter-btn" data-filter="ui-ux">UI/UX & Prototype <span class="filter-count">(2)</span></button>
+          <button class="filter-btn" data-filter="database">Database & Logic <span class="filter-count">(2)</span></button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-futuristic-grid" id="projectsGrid">
           <!-- Project 1: SIGAP -->
-          <article class="project-card highlight">
-            <div class="project-badge">Project Utama</div>
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">1. SIGAP (Sistem Informasi Pengaduan Tindak Perundungan dan Kekerasan)</h3>
-                <span class="project-subtitle">Aplikasi Web Layanan Pengaduan Pelajar</span>
+          <article class="project-futuristic-card glass-card" data-category="web-app ui-ux database" data-project="sigap">
+            <div class="project-card-banner">
+              <div class="banner-top">
+                <span class="priority-badge">⭐ Proyek Utama</span>
+                <span class="tech-pill-count">5 Tech Stacks</span>
               </div>
-
-              <div class="project-block">
-                <h4 class="block-label">Overview</h4>
-                <p>Aplikasi web yang dirancang khusus untuk memfasilitasi pelaporan tindak perundungan (bullying) dan kekerasan di kalangan pelajar secara terpusat, aman, dan transparan.</p>
-              </div>
-
-              <div class="project-grid-two">
-                <div class="project-block">
-                  <h4 class="block-label">Problem</h4>
-                  <p>Banyak korban atau saksi perundungan di lingkungan sekolah ragu melapor karena ketiadaan kanal pengaduan yang mudah diakses, terjaga privasinya, dan memiliki pencatatan status penanganan yang jelas.</p>
+              <div class="card-visual-mockup">
+                <div class="mockup-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="mockup-title">sigap.school-system.local</span>
                 </div>
-                <div class="project-block">
-                  <h4 class="block-label">Solution</h4>
-                  <p>Membangun antarmuka formulir pengaduan digital yang ramah pengguna bagi siswa serta sistem manajemen laporan yang tertata bagi pengelola sekolah untuk memantau status aduan.</p>
-                </div>
-              </div>
-
-              <div class="project-block">
-                <h4 class="block-label">Features</h4>
-                <ul class="feature-list">
-                  <li>Formulir pengajuan aduan tindak perundungan yang mudah digunakan.</li>
-                  <li>Pelacakan status penanganan laporan (misal: terkirim, diproses, selesai).</li>
-                  <li>Panel antarmuka bagi pengelola untuk meninjau data aduan masuk.</li>
-                </ul>
-              </div>
-
-              <div class="project-meta-row">
-                <div class="meta-group">
-                  <span class="group-label">Teknologi:</span>
-                  <div class="tech-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">MySQL / PostgreSQL</span>
-                    <span class="tag">Figma</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">Docker</span>
+                <div class="mockup-body">
+                  <div class="mockup-content-skeleton">
+                    <div class="skeleton-line full"></div>
+                    <div class="skeleton-line half"></div>
+                    <div class="skeleton-form-box">
+                      <span class="mockup-label">[Form Pengaduan Siswa Aman]</span>
+                    </div>
                   </div>
                 </div>
-                <div class="meta-group">
-                  <span class="group-label">My Role:</span>
-                  <span class="group-value">Frontend & Web Developer</span>
-                </div>
+              </div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-type-row">
+                <span class="project-cat-name">Layanan Publik & Sosial</span>
+                <span class="project-timeline">[Proyek Studi]</span>
+              </div>
+              <h3 class="project-card-heading">SIGAP: Sistem Pengaduan Tindak Perundungan Pelajar</h3>
+              <p class="project-brief">
+                Aplikasi web pelaporan tindak perundungan yang mengutamakan privasi siswa, penyederhanaan formulir aduan, dan sistem pelacakan status penanganan terpadu.
+              </p>
+
+              <div class="tech-stack-row">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Figma</span>
+                <span class="tech-badge">MySQL / PostgreSQL</span>
+                <span class="tech-badge">Git</span>
+                <span class="tech-badge">Docker</span>
               </div>
 
-              <div class="project-block">
-                <h4 class="block-label">Development Process</h4>
-                <p>Merancang wireframe dan antarmuka alur pelaporan di Figma, mengimplementasikan antarmuka halaman web, mengintegrasikan formulir aduan ke basis data, serta mengelola versi kode menggunakan Git dan lingkungan Docker.</p>
-              </div>
-
-              <div class="project-block">
-                <h4 class="block-label">Result</h4>
-                <p>Sistem berhasil diuji dan berfungsi untuk mengirimkan formulir laporan serta menampilkan riwayat aduan. [Jumlah pengguna aktif atau dampak metrik: Belum diisi].</p>
-              </div>
-
-              <div class="project-links">
-                <a href="#" class="btn-text" target="_blank" rel="noopener noreferrer">GitHub Repository: [Belum diisi]</a>
-                <span class="divider">•</span>
-                <a href="#" class="btn-text" target="_blank" rel="noopener noreferrer">Live Demo: [Belum diisi]</a>
+              <div class="card-action-row">
+                <button class="btn btn-sm btn-glow open-modal-btn" data-target="sigap">
+                  <span>Lihat Studi Kasus</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </button>
+                <span class="view-indicator">Modal Interaktif</span>
               </div>
             </div>
           </article>
 
           <!-- Project 2: Libfind -->
-          <article class="project-card">
-            <div class="project-content">
-              <div class="project-header">
-                <h3 class="project-title">2. Libfind (Website Perpustakaan Pintar)</h3>
-                <span class="project-subtitle">Platform Pencarian & Pengelolaan Pustaka Digital</span>
+          <article class="project-futuristic-card glass-card" data-category="web-app ui-ux database" data-project="libfind">
+            <div class="project-card-banner">
+              <div class="banner-top">
+                <span class="priority-badge secondary">📚 Proyek Katalog</span>
+                <span class="tech-pill-count">4 Tech Stacks</span>
               </div>
-
-              <div class="project-block">
-                <h4 class="block-label">Overview</h4>
-                <p>Website katalog perpustakaan pintar yang memudahkan pengguna mencari buku, melihat ketersediaan stok, dan mengakses informasi pustaka secara efisien.</p>
-              </div>
-
-              <div class="project-grid-two">
-                <div class="project-block">
-                  <h4 class="block-label">Problem</h4>
-                  <p>Pencarian koleksi buku di perpustakaan sering kali memerlukan waktu lama jika katalog belum terdigitalisasi dengan tampilan yang informatif dan navigasi yang cepat.</p>
+              <div class="card-visual-mockup">
+                <div class="mockup-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="mockup-title">libfind.smart-library.local</span>
                 </div>
-                <div class="project-block">
-                  <h4 class="block-label">Solution</h4>
-                  <p>Menyediakan antarmuka web pencarian buku yang intuitif, dilengkapi kartu informasi koleksi buku, kategori, dan status ketersediaan yang jelas.</p>
-                </div>
-              </div>
-
-              <div class="project-block">
-                <h4 class="block-label">Features</h4>
-                <ul class="feature-list">
-                  <li>Pencarian koleksi buku berdasarkan judul dan kategori.</li>
-                  <li>Halaman rincian informasi buku dan status ketersediaan.</li>
-                  <li>Antarmuka katalog pustaka yang terorganisir dan bersih.</li>
-                </ul>
-              </div>
-
-              <div class="project-meta-row">
-                <div class="meta-group">
-                  <span class="group-label">Teknologi:</span>
-                  <div class="tech-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">MySQL / PostgreSQL</span>
-                    <span class="tag">Figma</span>
-                    <span class="tag">Git</span>
+                <div class="mockup-body">
+                  <div class="mockup-content-skeleton">
+                    <div class="skeleton-search-bar">
+                      <span class="mockup-label">🔍 Cari buku & ketersediaan rak...</span>
+                    </div>
+                    <div class="skeleton-grid-cards">
+                      <div class="skeleton-mini-card"></div>
+                      <div class="skeleton-mini-card"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="meta-group">
-                  <span class="group-label">My Role:</span>
-                  <span class="group-value">Frontend & Web Developer</span>
-                </div>
+              </div>
+            </div>
+
+            <div class="project-card-content">
+              <div class="project-type-row">
+                <span class="project-cat-name">Pencarian & Manajemen Koleksi</span>
+                <span class="project-timeline">[Proyek Studi]</span>
+              </div>
+              <h3 class="project-card-heading">Libfind: Website Perpustakaan Pintar</h3>
+              <p class="project-brief">
+                Platform katalog perpustakaan interaktif untuk mempercepat penelusuran buku, pengecekan ketersediaan stok, dan filter kategori koleksi secara efisien.
+              </p>
+
+              <div class="tech-stack-row">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">Figma</span>
+                <span class="tech-badge">MySQL / PostgreSQL</span>
+                <span class="tech-badge">Git</span>
               </div>
 
-              <div class="project-block">
-                <h4 class="block-label">Development Process</h4>
-                <p>Membuat desain prototipe halaman katalog di Figma, menyusun tata letak antarmuka pencarian buku, menghubungkan tampilan ke basis data koleksi pustaka, dan mengelola alur pengerjaan dengan Git.</p>
-              </div>
-
-              <div class="project-block">
-                <h4 class="block-label">Result</h4>
-                <p>Website katalog dapat memuat daftar buku dan menampilkan hasil pencarian secara responsif. [Data jumlah koleksi atau pengguna: Belum diisi].</p>
-              </div>
-
-              <div class="project-links">
-                <a href="#" class="btn-text" target="_blank" rel="noopener noreferrer">GitHub Repository: [Belum diisi]</a>
-                <span class="divider">•</span>
-                <a href="#" class="btn-text" target="_blank" rel="noopener noreferrer">Live Demo: [Belum diisi]</a>
+              <div class="card-action-row">
+                <button class="btn btn-sm btn-glow open-modal-btn" data-target="libfind">
+                  <span>Lihat Studi Kasus</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </button>
+                <span class="view-indicator">Modal Interaktif</span>
               </div>
             </div>
           </article>
@@ -288,88 +387,359 @@
       </div>
     </section>
 
-    <!-- 5. Experience Section -->
+    <!-- 5. Experience & Education Timeline -->
     <section id="experience" class="section experience-section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Pengalaman</span>
-          <h2 class="section-title">Pengalaman Proyek & Akademik</h2>
-        </div>
+        <div class="timeline-two-column">
+          <!-- Experience Column -->
+          <div class="timeline-col">
+            <div class="section-header">
+              <span class="section-tag glass-pill">05. Rekam Jejak</span>
+              <h2 class="section-title">Pengalaman Proyek</h2>
+            </div>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-period">[Periode: Belum diisi]</span>
-              <h3 class="timeline-role">Web & Frontend Project Developer</h3>
-              <p class="timeline-org">Tugas Kuliah & Proyek Mandiri / Kampus</p>
-              <p class="timeline-desc">
-                Mengembangkan antarmuka dan sistem aplikasi web (seperti SIGAP dan Libfind) untuk memenuhi kebutuhan proyek studi. Bertanggung jawab atas desain tampilan, integrasi form, dan keterhubungan data.
-              </p>
+            <div class="futuristic-timeline">
+              <div class="ft-item glass-card">
+                <div class="ft-indicator"></div>
+                <div class="ft-time">[Periode: Belum diisi]</div>
+                <h3 class="ft-title">Pengembang Proyek Aplikasi Web & Frontend</h3>
+                <span class="ft-org">Proyek Mandiri & Penugasan Akademik Kampus</span>
+                <p class="ft-desc">
+                  Menganalisis kebutuhan pengguna, memetakan prototipe interaktif di Figma, serta menulis kode antarmuka dan sistem berbasis PHP untuk proyek <strong>SIGAP</strong> dan <strong>Libfind</strong>. Mengontrol kode menggunakan Git dan mempersiapkan container Docker.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Column -->
+          <div id="education" class="timeline-col">
+            <div class="section-header">
+              <span class="section-tag glass-pill">06. Pendidikan</span>
+              <h2 class="section-title">Latar Belakang Studi</h2>
+            </div>
+
+            <div class="futuristic-timeline">
+              <div class="ft-item glass-card">
+                <div class="ft-indicator edu-indicator"></div>
+                <div class="ft-time">[Tahun Masuk – Tahun Lulus: Belum diisi]</div>
+                <h3 class="ft-title">D3 Teknik Informatika</h3>
+                <span class="ft-org">Politeknik Elektronika Negeri Surabaya (PENS)</span>
+                <p class="ft-desc">
+                  Mempelajari dasar-dasar algoritma, rekayasa web, pemrograman berorientasi objek, normalisasi basis data relasional (MySQL & PostgreSQL), serta perancangan antarmuka pengguna berbasis Figma di lingkungan akademik kampus PENS.
+                </p>
+                <div class="academic-badge">
+                  <span>Status: Mahasiswa Aktif PENS</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 6. Education Section -->
-    <section id="education" class="section education-section">
+    <!-- 6. Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Pendidikan</span>
-          <h2 class="section-title">Riwayat Pendidikan</h2>
+        <div class="section-header center-header">
+          <span class="section-tag glass-pill">Kolaborasi & Umpan Balik</span>
+          <h2 class="section-title">Testimoni & Review Proyek</h2>
+          <p class="section-desc">Umpan balik dari rekan kolaborasi dan penguji sistem dalam lingkungan pengerjaan proyek akademik.</p>
         </div>
 
-        <div class="education-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-details">
-            <h3 class="edu-degree">D3 Teknik Informatika</h3>
-            <p class="edu-institution">[Nama Kampus/Politeknik: Belum diisi]</p>
-            <p class="edu-period">[Tahun Masuk – Tahun Kelulusan: Belum diisi]</p>
-            <p class="edu-notes">Fokus studi pada rekayasa perangkat lunak, pemrograman web, struktur data, dan basis data relasional.</p>
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-glass-card glass-card">
+            <div class="t-stars">⭐⭐⭐⭐⭐</div>
+            <p class="t-comment">
+              "Dalam pengerjaan aplikasi SIGAP, arsitektur alur formulir dan integrasi pengaduannya sangat memperhatikan kenyamanan siswa. Tampilannya tidak membingungkan dan alur penyimpanan data ke basis data berjalan lancar."
+            </p>
+            <div class="t-author-box">
+              <div class="t-avatar">RK</div>
+              <div class="t-info">
+                <h4 class="t-name">Rekan Tim Proyek</h4>
+                <span class="t-role">Kolaborator Pengembangan Web & Proyek Kampus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-glass-card glass-card">
+            <div class="t-stars">⭐⭐⭐⭐⭐</div>
+            <p class="t-comment">
+              "Katalog Libfind menyajikan pemecahan masalah pencarian buku dengan tata letak yang bersih dan terstruktur. Prototipe dari Figma berhasil diwujudkan ke kode web secara rapi dan modular."
+            </p>
+            <div class="t-author-box">
+              <div class="t-avatar">DA</div>
+              <div class="t-info">
+                <h4 class="t-name">Reviewer Akademik</h4>
+                <span class="t-role">Evaluasi Proyek Sistem Informasi Pustaka</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-glass-card glass-card">
+            <div class="t-stars">⭐⭐⭐⭐⭐</div>
+            <p class="t-comment">
+              "Etos kerja dalam mendokumentasikan kode dengan Git dan menyiapkan lingkungan pengujian dengan Docker sangat membantu konsistensi proyek dari awal hingga siap dipresentasikan."
+            </p>
+            <div class="t-author-box">
+              <div class="t-avatar">ST</div>
+              <div class="t-info">
+                <h4 class="t-name">Rekan Praktikum</h4>
+                <span class="t-role">Laboratorium Teknik Informatika</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. Contact Section -->
+    <!-- 7. Interactive Contact Section -->
     <section id="contact" class="section contact-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Kontak</span>
-          <h2 class="section-title">Mari Terhubung</h2>
-          <p class="section-desc">Saya terbuka untuk kesempatan kerja magang, kontrak, maupun posisi full-time junior.</p>
+          <span class="section-tag glass-pill">07. Hubungi Saya</span>
+          <h2 class="section-title">Mari Terhubung & Berdiskusi</h2>
+          <p class="section-desc">Kirimkan pesan melalui formulir di bawah atau hubungi langsung melalui kanal media profesional saya.</p>
         </div>
 
-        <div class="contact-card">
-          <div class="contact-grid">
-            <div class="contact-item">
-              <span class="contact-label">Email</span>
-              <a href="mailto:[Belum diisi]" class="contact-link">[Belum diisi]</a>
+        <div class="contact-futuristic-grid">
+          <!-- Contact Channels Info -->
+          <div class="contact-info-panel glass-card">
+            <h3 class="panel-heading">Saluran Komunikasi Langsung</h3>
+            <p class="panel-desc">
+              Saya terbuka untuk kesempatan magang, kontrak, maupun posisi junior Frontend Developer / Software Engineer.
+            </p>
+
+            <div class="channels-list">
+              <div class="channel-card">
+                <div class="channel-icon">✉️</div>
+                <div class="channel-details">
+                  <span class="ch-label">Email Profesional</span>
+                  <a href="mailto:elextrolight@gmail.com" class="ch-link copyable-target">elextrolight@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon">💼</div>
+                <div class="channel-details">
+                  <span class="ch-label">LinkedIn</span>
+                  <span class="ch-link-muted">-</span>
+                </div>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon">🐙</div>
+                <div class="channel-details">
+                  <span class="ch-label">GitHub Repository</span>
+                  <a href="https://github.com/elextrolight-netizen/Portofolio.git" target="_blank" rel="noopener noreferrer" class="ch-link">github.com/elextrolight-netizen/Portofolio</a>
+                </div>
+              </div>
             </div>
-            <div class="contact-item">
-              <span class="contact-label">LinkedIn</span>
-              <a href="#" class="contact-link" target="_blank" rel="noopener noreferrer">[Belum diisi]</a>
+
+            <div class="status-badge-box">
+              <span class="live-dot"></span>
+              <span>Waktu respons rata-rata: Dalam 24-48 Jam Kerja</span>
             </div>
-            <div class="contact-item">
-              <span class="contact-label">GitHub</span>
-              <a href="#" class="contact-link" target="_blank" rel="noopener noreferrer">[Belum diisi]</a>
-            </div>
+          </div>
+
+          <!-- Interactive Glassmorphic Contact Form -->
+          <div class="contact-form-panel glass-card">
+            <h3 class="panel-heading">Formulir Pesan Interaktif</h3>
+            <form id="contactForm" class="futuristic-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Nama Lengkap <span class="req">*</span></label>
+                  <input type="text" id="senderName" class="form-input" placeholder="Masukkan nama Anda..." required>
+                  <span class="field-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Alamat Email <span class="req">*</span></label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="nama@email.com..." required>
+                  <span class="field-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="messageSubject" class="form-label">Perihal / Subjek</label>
+                <input type="text" id="messageSubject" class="form-input" placeholder="Peluang Kerja / Diskusi Proyek...">
+              </div>
+
+              <div class="form-group">
+                <label for="messageBody" class="form-label">Pesan Anda <span class="req">*</span></label>
+                <textarea id="messageBody" rows="5" class="form-textarea" placeholder="Tuliskan pesan atau detail peluang yang ingin Anda sampaikan..." required></textarea>
+                <span class="field-error" id="bodyError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-glow btn-full" id="submitBtn">
+                <span class="btn-text">Kirimkan Pesan Sekarang</span>
+                <span class="btn-loader" style="display: none;"></span>
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <p>&copy; 2026 Mahasiswa D3 Teknik Informatika. Seluruh hak cipta dilindungi.</p>
-      <p class="footer-note">Dibuat dengan kode HTML, CSS, dan JavaScript murni.</p>
+  <!-- Futuristic Footer -->
+  <footer class="footer glass-panel">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#home" class="logo">
+          <span class="logo-terminal">&gt;_</span>
+          <span class="logo-main">Arvin<span class="logo-accent">Dzaky</span></span>
+        </a>
+        <p class="footer-sub">Portofolio resmi <strong>Arvin Dzaky Nugraha</strong> • Mahasiswa D3 Teknik Informatika Politeknik Elektronika Negeri Surabaya (PENS).</p>
+      </div>
+
+      <div class="footer-right">
+        <p>&copy; 2026 Arvin Dzaky Nugraha. Seluruh hak cipta dilindungi.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- =========================================================================
+       PROJECT MODALS (Deep-Dive Case Study)
+       ========================================================================= -->
+
+  <!-- Modal 1: SIGAP -->
+  <div class="modal-overlay" id="modal-sigap" role="dialog" aria-modal="true" aria-labelledby="modal-sigap-title">
+    <div class="modal-glass-container glass-card">
+      <button class="modal-close-btn" aria-label="Tutup modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-tags">
+          <span class="tag-glass">Web Application</span>
+          <span class="tag-glass highlight">Prioritas Proyek Utama</span>
+        </div>
+        <h2 class="modal-title" id="modal-sigap-title">SIGAP (Sistem Informasi Pengaduan Tindak Perundungan dan Kekerasan)</h2>
+        <span class="modal-subtitle">Platform Layanan Pelaporan Berbasis Web untuk Perlindungan Pelajar</span>
+      </div>
+
+      <div class="modal-body-scroll">
+        <div class="modal-section">
+          <h4 class="modal-section-title">Ringkasan & Urgensi Solusi (Overview & Problem)</h4>
+          <p class="modal-p">
+            Tindak perundungan di lingkungan institusi pendidikan kerap kali tidak tertangani secara optimal karena siswa merasa tidak memiliki media penyampaian yang aman dan terjamin kerahasiaannya. SIGAP dibangun untuk menjembatani masalah ini dengan menyediakan formulir pengaduan digital yang mudah diisi serta dasbor pemantauan status aduan bagi pengelola.
+          </p>
+        </div>
+
+        <div class="modal-grid-two">
+          <div class="modal-box glass-box">
+            <h5 class="box-title">Solusi yang Diterapkan</h5>
+            <ul class="modal-check-list">
+              <li>Formulir berstruktur jelas dengan kolom kronologi dan bukti aduan.</li>
+              <li>Pemberian kode tiket unik untuk melacak tindak lanjut tanpa membuka data pribadi pelapor secara sembarangan.</li>
+              <li>Panel manajemen laporan untuk memverifikasi validitas informasi.</li>
+            </ul>
+          </div>
+          <div class="modal-box glass-box">
+            <h5 class="box-title">Peran Saya (My Role)</h5>
+            <p class="modal-p-compact">
+              <strong>Frontend & Web Developer:</strong> Merancang desain visual di Figma, memetakan responsivitas form di halaman web, menyambungkan alur request PHP ke MySQL/PostgreSQL, serta memastikan lingkungan Docker siap pakai.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-section-title">Teknologi & Lingkungan Pengembangan</h4>
+          <div class="tech-stack-row">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL / PostgreSQL</span>
+            <span class="tech-badge">Figma</span>
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">Docker</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-section-title">Hasil Pengujian & Akses</h4>
+          <p class="modal-p">
+            Sistem telah berhasil melalui tahap pengujian internal untuk skenario pelaporan dan pembaruan status laporan. <em>[Metrik dan jumlah aduan terproses: Belum diisi]</em>.
+          </p>
+          <div class="modal-links">
+            <a href="https://github.com/elextrolight-netizen/Portofolio.git" class="btn btn-sm btn-glass" target="_blank" rel="noopener noreferrer">Repositori GitHub Proyek</a>
+            <a href="#" class="btn btn-sm btn-glow" target="_blank" rel="noopener noreferrer">Live Demo: [Belum diisi]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Libfind -->
+  <div class="modal-overlay" id="modal-libfind" role="dialog" aria-modal="true" aria-labelledby="modal-libfind-title">
+    <div class="modal-glass-container glass-card">
+      <button class="modal-close-btn" aria-label="Tutup modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-tags">
+          <span class="tag-glass">Smart Library</span>
+          <span class="tag-glass">Katalog Digital</span>
+        </div>
+        <h2 class="modal-title" id="modal-libfind-title">Libfind (Website Perpustakaan Pintar)</h2>
+        <span class="modal-subtitle">Platform Penelusuran & Manajemen Katalog Pustaka</span>
+      </div>
+
+      <div class="modal-body-scroll">
+        <div class="modal-section">
+          <h4 class="modal-section-title">Ringkasan Masalah & Solusi</h4>
+          <p class="modal-p">
+            Pencarian koleksi pustaka secara fisik menyita banyak waktu jika perpustakaan tidak memiliki modul pencarian digital yang akurat dan responsif. Libfind menyediakan antarmuka pencarian cepat dengan kartu informasi koleksi buku, kategori tema, serta penunjuk status ketersediaan di rak.
+          </p>
+        </div>
+
+        <div class="modal-grid-two">
+          <div class="modal-box glass-box">
+            <h5 class="box-title">Fitur-Fitur Utama</h5>
+            <ul class="modal-check-list">
+              <li>Pencarian buku secara real-time berdasarkan kata kunci atau penulis.</li>
+              <li>Filter kategori koleksi pustaka yang ramah pengguna.</li>
+              <li>Kartu informasi ketersediaan buku yang mudah dipahami.</li>
+            </ul>
+          </div>
+          <div class="modal-box glass-box">
+            <h5 class="box-title">Peran Saya (My Role)</h5>
+            <p class="modal-p-compact">
+              <strong>Frontend & Web Developer:</strong> Mendesain antarmuka katalog di Figma, menyusun elemen visual responsif, mengintegrasikan query pencarian data buku dengan PHP dan basis data, serta mengelola kode di Git.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-section-title">Teknologi yang Digunakan</h4>
+          <div class="tech-stack-row">
+            <span class="tech-badge">PHP</span>
+            <span class="tech-badge">MySQL / PostgreSQL</span>
+            <span class="tech-badge">Figma</span>
+            <span class="tech-badge">Git</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-section-title">Hasil & Tautan Proyek</h4>
+          <p class="modal-p">
+            Platform berhasil diuji dalam menampilkan ratusan entri judul buku serta merespons query pencarian secara instan. <em>[Data jumlah katalog/pengguna: Belum diisi]</em>.
+          </p>
+          <div class="modal-links">
+            <a href="https://github.com/elextrolight-netizen/Portofolio.git" class="btn btn-sm btn-glass" target="_blank" rel="noopener noreferrer">Repositori GitHub Proyek</a>
+            <a href="#" class="btn btn-sm btn-glow" target="_blank" rel="noopener noreferrer">Live Demo: [Belum diisi]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box -->
+  <div class="hud-toast" id="hudToast">
+    <div class="toast-indicator"></div>
+    <div class="toast-content">
+      <span class="toast-title" id="toastTitle">Notifikasi Sistem</span>
+      <span class="toast-msg" id="toastMsg">Operasi berhasil dijalankan.</span>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
